@@ -4,7 +4,7 @@ const z = 100;
 
 if (true) {
     const y = 200; // block scope y cant be accessed outside the block
-    console.log(z + y);
+    console.log(z + y); // z is a global variable so it can accessed here
 }
 
 function name2() {
@@ -35,9 +35,8 @@ function parent() {
         // x can be accessed here, child can use parent variables  
     }
 
-    child()
+    child() // call child in the parent
 }
-
 parent()
 
 // declaration vs expression
@@ -58,5 +57,5 @@ console.log(addPlusSign("Flacko"));
 const minus = (a,b) => a - b; // implicit return
 console.log(minus(3,4));
 
-const double = (a) => a**a;
-console.log(double(3));
+const double = (a) => a ** 2; // implicit return
+console.log(double(23));

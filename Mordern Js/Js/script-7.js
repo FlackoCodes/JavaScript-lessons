@@ -2,6 +2,7 @@
 
 // nested loops
 
+// for every n time the outer loop runs, the inner will run ever its max n times
 for (let index = 0; index < 4; index++) {
     console.log('This is the outer loop');
 
@@ -109,6 +110,7 @@ console.log(compBetween);
 
 // Array.map
 
+// map returns a new array given the condition that is called on the array
 const mapArray = [1,2,3,4]
 
 const result2 = mapArray.map(element => element * 2)
@@ -138,7 +140,12 @@ console.log(compYears);
 
 // array.reduce
 
+// array.reduce used basically for summing arrays and can be used on objects in array too
 const numbers = [1,2,3,4,5,6,7]
+
+// prev number starts at 1 since there is no number before, 1 will bw addded to 2 and the loop will continue
+
+// initial values can be given to be used as starting points too
 
 const sum = numbers.reduce((prevValue, nextValue) => prevValue + nextValue)
 console.log(sum);

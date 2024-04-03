@@ -58,7 +58,7 @@ console.log(Math.abs(answer));
 // truthy anf falsy caveats
 
 const children = 0;
-// since 0 is a falsy children will be cohersed into false and the falsee to statement will run
+// since 0 is a falsy children will be cohersed into false and the falsy  statement will run
 if (children!=NaN){
     console.log(`you have ${children} children`);
 }else{
@@ -122,6 +122,7 @@ console.log(c);
 
 const age = 9;
 
+// do this else that
 (age >= 18) ? console.log('You can vote') : console.log('You cannot vote until you are 18 buddy');
 
 // assigning a conditional value to a variable

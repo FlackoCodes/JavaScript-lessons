@@ -1,19 +1,12 @@
 console.log('Hello, world');
-<<<<<<< HEAD
 // let a,b,c;
 // a =5, b=6, c=7;
 // console.log(a-b);
-=======
-let a,b,c;
-a =5, b=6, c=7;
-console.log(a-b);
->>>>>>> 27d6bdce84bd3ce432a1cb065bdf4954b953a9c9
 
 const name = 'Flacko';
 console.log(typeof(name));
 
 const bigInt = 244444498888n;
-<<<<<<< HEAD
 console.log(bigInt + 1000n, typeof bigInt);
 
 
@@ -87,81 +80,6 @@ let quot = x / y;
 let remainder = x % y;
 let mult = (x * y);
 console.log(sum1, diff, quot, remainder, mult);
-=======
-// console.log(bigInt + 1000n, typeof bigInt);
-
-
-// const newFunc =(_hello) =>{
-//     output = console.log(_hello + ' how are you doing?');
-//     return output
-// }
-
-// newFunc('Flacko')
-
-// const newObj = {
-//     name : 'Flacko',
-//     age : 28,
-//     occupation :  'software/web developer'
-// }
-
-
-// const newArr = [0, 1, 2, 3]
-// let res_ =  newArr.length
-// console.log(res_);
-// newArr.push(5)
-// console.log(newArr);
-
-// newArr.forEach(element => {
-//     element ++
-//     console.log(element);
-// });
-
-// // type conversion
-
-// let num_ = '100';
-// console.log(num_, typeof num_);
-// let converted_ = parseInt(num_)
-// console.log(converted_, typeof converted_);
-
-// console.log(parseInt, typeof parseInt);
-
-// let boool = 0;
-
-// console.log('this is ' + 'foo'/ 'bar');
-
-// console.log(Boolean(boool));
-
-// // template literals / use of backticks.
-
-// const name1 = 'Flacko';
-// const age2 = 26;
-
-// console.log(`my name is ${name1} and I am ${age2} years old`);
-
-// // .__proto__ => checks the number of methods that can be called on an object
-
-// s = 'string'
-
-// console.log(s.__proto__);
-
-// console.log(Math);
-
-// console.log(Math.floor(2.9));
-
-// // math.round ==> round to the nearest whole number
-// // math.floor ==> round down
-// // math.ceil ==> round up
-
-// let x = Math.floor(Math.random() * 101);
-// let y = Math.floor( Math.random() * 51);
-
-// let sum = x + y;
-// let diff = x - y;
-// let quot = x / y;
-// let remainder = x % y;
-// let mult = (x * y);
-// console.log(sum, diff, quot, remainder, mult);
->>>>>>> 27d6bdce84bd3ce432a1cb065bdf4954b953a9c9
 
 // arays and objects
 
@@ -194,11 +112,7 @@ y = [...fruits, ...vegetables]
 console.log(y);
 
 // flatten an array
-<<<<<<< HEAD
 // flatten takes an array(nested) and make it a single array
-=======
-
->>>>>>> 27d6bdce84bd3ce432a1cb065bdf4954b953a9c9
 const arrr = [1, [3,4], 5, 7, 5, 8, [6, 2]]
 console.log(arrr);
 console.log('This is the flatten arrayed', arrr.flat());
@@ -353,7 +267,6 @@ console.log(library[0]);
 
 // turn the library object into a JSON string
 
-<<<<<<< HEAD
 const jsonObject = JSON.stringify(library)
 
 library[0].title = 'fisrtBook';
@@ -362,13 +275,3 @@ console.log(library);
 console.log(jsonObject)
 
 
-y = 12;
-console.log(y);
-=======
-// const jsonObject = JSON.stringify(library)
-
-// library[0].title = 'fisrtBook';
-// library[0].status.reading = true;
-// console.log(library);
-// console.log(jsonObject)
->>>>>>> 27d6bdce84bd3ce432a1cb065bdf4954b953a9c9

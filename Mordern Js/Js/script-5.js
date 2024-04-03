@@ -30,6 +30,8 @@ arrr = [1,2,3,4]
 
 console.log(minMax(arrr));
 
+// anonymous/ unnamed function
+
 (function (len, bre) {
     const area = len * bre
     const output = `The area of a rectangle with length ${len} and of width ${bre} is ${area}`
