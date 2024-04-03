@@ -90,3 +90,9 @@ function name() {
 }
 
 name()
+
+console.log(hoisting()) // this can be done because of hoisting, this works in functions but not in variable declarations
+function hoisting() {
+    let output = 'demonstrating how hoisting works'
+    return output
+}

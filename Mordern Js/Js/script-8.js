@@ -1,20 +1,20 @@
-// DOM
-// const listItems = document.querySelectorAll('.item');
-// console.log(listItems[1].innerText);
 
-// listItems.forEach(element => {
-//     element.style.color = 'red'
+// const listItems1 = document.getElementsByClassName('item'); // returns an HTMLCollection(arraylike), has to cohersed into an array before hihj order array methods can be used on
+// console.log(listItems1);
+
+// listItems1.forEach(element => {  
+//     element.style.color = 'red' // ---> retruns a typeerror
 // });
 
-let evenNumbers = []
-for (let index = 1; index < 10; index++) {
-    if (index % 2 != 0) {
-        evenNumbers.push(index)
+
+// document.query selector returns NodeList, high order array methods can be used/called on a NodeList
+
+// for each method passes each elemnt of the arry as the fisrt argument to the callback function
+const listItems2 = document.querySelectorAll('.item')
+listItems2.forEach((element, index ) => {
+    if (index ==2){
+        console.log(element.innerText);
+        element.remove()
     }
-}
+});
 
-console.log(evenNumbers);
-
-for (let index = 10; index > 0; index = index-1) {
-    console.log(index);    
-}

@@ -57,5 +57,5 @@ console.log(addPlusSign("Flacko"));
 const minus = (a,b) => a - b; // implicit return
 console.log(minus(3,4));
 
-const double = (a) => a ** 2; // implicit return
+const double = (a) => a ** 2; 
 console.log(double(23));
