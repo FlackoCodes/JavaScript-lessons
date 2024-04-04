@@ -15,8 +15,8 @@ Whitespace between elements are also text nodes.
 const sibling1 = document.querySelector('.children');
 console.log(sibling1.nextSibling);
 
+// nextElementSibling returns the next element (not text and comment nodes).
+
 const sibling2 = document.querySelector('.children')
 console.log(sibling2.nextElementSibling);
 
-const sibling3 = document.querySelector('.children')
-console.log(sibling3.previousSibling.textContent);
