@@ -34,34 +34,8 @@
 // document.body.appendChild(div)
 // div.style.textAlign = 'center'
 
-const createListItem = (item) => {
-    /* 
-    // select the ul tag so we append the newly created li select the ul 
-    or we use query selector to get the  className
-    */
-    const ul = document.querySelector('ul'); 
-
-    const li = document.createElement('li')
-    const liText = document.createTextNode(item)
-    li.appendChild(liText)
-
-    const button = creatButton('remove-item btn-link text-red')
-    console.log(`newly created button`);
-
-    const icon = document.createElement('i')
-    icon.className = 'fa-solid fa-xmark'
-
-    button.appendChild(icon)
-    li.appendChild(button)
-    ul.appendChild(li)
-    console.log(li);
-
-}
-
-createListItem('Berris')
-createListItem('Grapes')
-
 // creating seperate functions for each tag 
+
 
 const creatButton = (classNames) =>{
     const button = document.createElement('button');
@@ -75,4 +49,35 @@ const creatIcon = (classNames) =>{
     icon.className = classNames
     return icon
 }
+const createListItem = (item) => {
+    /* 
+    // select the ul tag so we append the newly created li select the ul 
+    or we use query selector to get the  className
+    */
+    const ul = document.querySelector('ul'); 
+
+    const li = document.createElement('li')
+    const liText = document.createTextNode(item)
+    li.appendChild(liText)
+
+    const button = creatButton('remove-item btn-link text-red')
+    // console.log(`newly created button`);
+
+    const icon = creatIcon('fa-solid fa-xmark')
+    // console.log('newly created icon');
+
+    button.appendChild(icon)
+    li.appendChild(button)
+    ul.appendChild(li)
+
+}
+
+createListItem('Berris')
+createListItem('Grapes')
+createListItem('Citrus')
+
+
+
+
+
 
