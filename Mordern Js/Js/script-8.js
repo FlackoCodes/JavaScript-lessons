@@ -76,6 +76,13 @@ createListItem('Berris')
 createListItem('Grapes')
 createListItem('Citrus')
 
+// replacing elements
+const replaceFirstItem = () => {
+    const fisrtItem = document.querySelector("li:nth-child(1)")
+    fisrtItem.textContent = 'Replaced Item'
+}
+replaceFirstItem()
+
 
 
 
