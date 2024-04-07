@@ -77,14 +77,20 @@ createListItem('Grapes')
 createListItem('Citrus')
 
 // replacing elements
-const replaceFirstItem = () => {
-    const fisrtItem = document.querySelector("li:nth-child(1)")
-    fisrtItem.textContent = 'Replaced Item'
+// const replaceFirstItem = () => {
+//     const fisrtItem = document.querySelector("li:nth-child(1)")
+//     fisrtItem.textContent = 'Replaced Item'
+// }
+// replaceFirstItem()
+
+
+// clearing / removing elements
+
+const removeClearButton = () =>{
+    const clearBtn = document.querySelector('.btn-clear')
+    clearBtn.remove()
 }
-replaceFirstItem()
 
-
-
-
+removeClearButton()
 
 
