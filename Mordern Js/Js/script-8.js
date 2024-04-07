@@ -86,11 +86,26 @@ createListItem('Citrus')
 
 // clearing / removing elements
 
-const removeClearButton = () =>{
-    const clearBtn = document.querySelector('.btn-clear')
-    clearBtn.remove()
+// const removeClearButton = () =>{
+//     const clearBtn = document.querySelector('.btn-clear')
+//     clearBtn.remove()
+// }
+
+// removeClearButton()
+
+// using event listeners to remove the x btn
+
+const delBtn = document.querySelectorAll('.fa-solid');
+
+const deleteItem = (event) => {
+    // Access the parent <li> element of the clicked button
+    const listItem = event.target.closest('.item');
+    // Remove the parent <li> element
+    listItem.remove();
 }
 
-removeClearButton()
 
+delBtn.forEach(element => {
+    element.addEventListener('click', deleteItem)
+});
 
