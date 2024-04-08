@@ -97,13 +97,10 @@ createListItem('Citrus')
 
 const delBtn = document.querySelectorAll('.fa-solid');
 
-const deleteItem = (event) => {
-    // Access the parent <li> element of the clicked button
-    const listItem = event.target.closest('.item');
-    // Remove the parent <li> element
-    listItem.remove();
-}
-
+const deleteItem =  () =>{
+        const clearBtn = document.querySelector('.item')
+        clearBtn.remove()
+    }
 
 delBtn.forEach(element => {
     element.addEventListener('click', deleteItem)
