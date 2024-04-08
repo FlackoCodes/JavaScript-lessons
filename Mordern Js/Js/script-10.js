@@ -5,3 +5,7 @@
 // adding event listeners
 
 const clearBtn = document.querySelector('#clear')
+
+const addEvent = () => {
+    console.log('button is clicked');
+}
