@@ -16,10 +16,11 @@ clearBtn.addEventListener('click', addEvent);
 
 // event object (e)
 
-const obj = {
-    name:'Flacko',
-    age:26
-}
+const addBtn = document.querySelector('.btn')
 
-const {age, name} = obj
-console.log(name);
+addBtn.addEventListener('click', function (e) {
+    e.preventDefault()
+    console.log(e.target);
+    e.target.style.color = 'red';
+
+})
