@@ -1,4 +1,6 @@
 // event listeners 
+const header = document.querySelector('h1')
+
 
 // callack functions, mainly functions passed as arguments into another function.
 
@@ -25,3 +27,29 @@ addBtn.addEventListener('click', function (e) {
     e.target.style.color = 'red';
 
 })
+
+const onDrag = (e) => {
+    header.textContent = `X ${e.clientX} Y ${e.clientY}`
+}
+
+header.addEventListener('drag', onDrag)
+
+// keyboard events and keyboard properties
+
+const inputField = document.querySelector('#item-input');
+
+
+
+const onKeyPress = (e) =>{
+    console.log('you have pressed the input field');
+} 
+
+const onKeyPress2 = (e) =>{
+    if (e.key == 'Flacko') {
+        console.log(`${e.key} is the pressed key`);
+    }
+}
+
+inputField.addEventListener('keypress', onKeyPress)
+inputField.addEventListener('keypress', onKeyPress2)
+
