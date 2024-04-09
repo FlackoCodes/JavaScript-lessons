@@ -21,6 +21,7 @@ const addBtn = document.querySelector('.btn')
 addBtn.addEventListener('click', function (e) {
     e.preventDefault()
     console.log(e.target);
+    console.log(e.type); // type of event triggered
     e.target.style.color = 'red';
 
 })
