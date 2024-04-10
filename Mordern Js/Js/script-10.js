@@ -45,8 +45,8 @@ const onKeyPress = (e) =>{
 } 
 
 const onKeyPress2 = (e) =>{
-    if (e.key == 'Flacko') {
-        console.log(`${e.key} is the pressed key`);
+    if (e.key == 'Enter') {
+        alert('you pressed enter')
     }
 }
 
