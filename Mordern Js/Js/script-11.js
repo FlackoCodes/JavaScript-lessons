@@ -19,7 +19,7 @@ const onChecked = (e) =>{
     if (isChecked) {
         heading.textContent = `checkbox has been checked: ${isChecked}`
     } else {
-        heading.textContent = `checkbox has npt been checked`
+        heading.textContent = `checkbox has not been checked`
     }
 }
 
@@ -27,3 +27,7 @@ inputItem.addEventListener('input', onInput)
 priorityItem.addEventListener('change', onSelect)
 checkbox.addEventListener('input', onChecked)
 
+
+arr = [1,2,3]
+mappedarr = arr.map((x)=> x*2)
+console.log(mappedarr);
