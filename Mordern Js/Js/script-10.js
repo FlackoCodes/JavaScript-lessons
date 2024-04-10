@@ -53,3 +53,6 @@ const onKeyPress2 = (e) =>{
 inputField.addEventListener('keypress', onKeyPress)
 inputField.addEventListener('keypress', onKeyPress2)
 
+// e.repeat checks for keydown hold.
+
+
