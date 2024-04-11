@@ -54,3 +54,5 @@ const onSubmit = (e) =>{
 }
 
 form.addEventListener('submit', onSubmit)
+
+// window.onload => allows to load script when the file is placed at the top
