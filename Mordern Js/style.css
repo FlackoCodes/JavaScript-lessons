@@ -42,7 +42,7 @@ header h1 {
 #form-select, .form-input {
   width: 100%;
   font-size: 18px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -88,6 +88,10 @@ header h1 {
   border: none;
   padding: 0;
   cursor: pointer;
+}
+
+small{
+  display: none;
 }
 
 .btn-clear {

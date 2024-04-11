@@ -28,6 +28,29 @@ priorityItem.addEventListener('change', onSelect)
 checkbox.addEventListener('input', onChecked)
 
 
-arr = [1,2,3]
-mappedarr = arr.map((x)=> x*2)
-console.log(mappedarr);
+const small = document.querySelector('small')
+
+const onHover = (e) =>{
+    inputItem.style.borderColor = 'red'
+}
+
+inputItem.addEventListener('focus', onHover)
+
+
+
+// form submission
+
+
+const form = document.getElementById('item-input')
+
+const onSubmit = (e) =>{
+    e.preventDefault()
+    const item = document.getElementById('item-input').value
+    const formSelect = document.getElementById('form-select')
+
+    if (item == '' || formSelect == '0') {
+        alert('please fill all fields')
+    }
+}
+
+form.addEventListener('submit', onSubmit)
