@@ -151,11 +151,11 @@ const sum = numbers.reduce((prevValue, nextValue) => prevValue + nextValue)
 console.log(sum);
 
 const newSet = [2,3,4,5]
-const newSUm = newSet.reduce(function (prev, next) {
+const newSum = newSet.reduce(function (prev, next) {
     return prev + next
 })
 
-console.log(newSUm);
+console.log(newSum);
 
 const cart = [
     {id: 1, name: 'Mac', price: 700},
