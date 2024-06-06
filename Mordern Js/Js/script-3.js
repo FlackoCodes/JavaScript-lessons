@@ -48,7 +48,7 @@ console.log(result);
 // objects as params
 
 const loginUser = (user) =>{
-    return `The user ${user.name} with an id of ${user.id} should is logged in`
+    return `The user ${user.name} with an id of ${user.id}  is logged in`
 }
 
 const user = {

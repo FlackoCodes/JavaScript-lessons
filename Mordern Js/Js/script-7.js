@@ -182,7 +182,7 @@ const people = [
         age: 16
     },
     {
-        name: 'Adwoa',
+        name: 'Tito',
         email: 'flacko.com',
         age: 17
     },

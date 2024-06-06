@@ -92,7 +92,7 @@ if (Object.keys(user1).length!== 0 ) {
 // && true for all
 // || true for one -- either 
 
-// && returnsthe fisrt falsey value or the last value
+// && returns the fisrt falsey value or the last value
 
 let a;
 
@@ -104,7 +104,7 @@ console.log(a);
 
 let b;
 
-b = 1|| 2 || 0;
+b = 1 || 2 || 0;
 
 console.log(b);
 

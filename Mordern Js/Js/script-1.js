@@ -94,6 +94,9 @@ console.log(arr[4]);
 
 // nesting arrays
 
+// splice method on an Array
+// takes three params, starting position, number of times to be removed and number of items to be added.
+
 const fruits = ['orange', 'bannana', 'apple']
 const vegetables = ['lettuce', 'carbage', 'carrot']
 
